@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Melbourne's Best Bars" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Bars</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/bars.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Melbourne's Finest Bars</h2>
+        <p class="page-subtitle">Discover the city's most exceptional cocktail bars, rooftop venues, and hidden speakeasies</p>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+      <div class="container">
+        <h2 class="filter-title">Filter by Style</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Bars</button>
+          <button class="filter-btn" data-filter="cocktail">Cocktail Bars</button>
+          <button class="filter-btn" data-filter="rooftop">Rooftop Bars</button>
+          <button class="filter-btn" data-filter="speakeasy">Speakeasies</button>
+          <button class="filter-btn" data-filter="wine">Wine Bars</button>
+          <button class="filter-btn" data-filter="craft">Craft Beer</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container mb-5">
+      <div class="row" id="barsContainer">
+        <!-- Bars will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Bars Data */
+      const barsData = [
+  {
+    "name": "Eau De Vie",
+    "type": "speakeasy",
+    "category": "Cocktail Bar",
+    "location": "1 Malthouse Ln, Melbourne VIC 3000, Australia",
+    "description": "Hidden speakeasy known for its extensive whiskey collection and expertly crafted cocktails in an intimate setting.",
+    "specialties": ["Whiskey Collection", "Classic Cocktails", "Intimate Atmosphere", "Expert Bartenders"],
+    "image": "./media/img/31.jpg",
+    "link": "https://eaudevie.com.au/melbourne/"
+  },
+  {
+    "name": "Black Pearl",
+    "type": "cocktail",
+    "category": "Bar",
+    "location": "304 Brunswick St, Fitzroy VIC 3065, Australia",
+    "description": "Award-winning cocktail bar known for innovative drinks and a lively atmosphere.",
+    "specialties": ["Innovative Cocktails", "Friendly Staff", "Lively Vibe", "Craft Spirits"],
+    "image": "./media/img/32.jpg",
+    "link": "https://www.blackpearlbar.com.au/"
+  },
+  {
+    "name": "1806",
+    "type": "speakeasy",
+    "category": "Prohibition Style",
+    "location": "169 Exhibition St, Melbourne VIC 3000, Australia",
+    "description": "Hidden bar with prohibition-era style cocktails and a cozy atmosphere.",
+    "specialties": ["Prohibition Cocktails", "Cozy Space", "Rare Spirits", "Expert Mixology"],
+    "image": "./media/img/33.jpg",
+    "link": "https://1806.com.au/"
+  },
+  {
+    "name": "The Toff",
+    "type": "cocktail",
+    "category": "Lounge Bar",
+    "location": "2f/252 Swanston St, Melbourne VIC 3000, Australia",
+    "description": "Trendy rooftop bar offering creative cocktails and live music.",
+    "specialties": ["Rooftop Views", "Creative Cocktails", "Live Music", "Trendy Atmosphere"],
+    "image": "./media/img/34.jpg",
+    "link": "https://thetoff.com.au/"
+  },
+  {
+    "name": "Section 8",
+    "type": "rooftop",
+    "category": "Outdoor Bar",
+    "location": "27-29 Tattersalls Ln, Melbourne VIC 3000, Australia",
+    "description": "Quirky outdoor bar made from a shipping container with a relaxed vibe.",
+    "specialties": ["Outdoor Seating", "Street Food", "Casual Atmosphere", "Craft Beers"],
+    "image": "./media/img/35.jpg",
+    "link": "https://section8.com.au/"
+  },
+  {
+    "name": "Siglo",
+    "type": "rooftop",
+    "category": "Rooftop Bar",
+    "location": "2/161 Spring St, Melbourne VIC 3000, Australia",
+    "description": "Elegant rooftop bar with a focus on classic cocktails and vintage charm.",
+    "specialties": ["Outside Views", "Classic Cocktails", "Vintage Style", "Premium Spirits"],
+    "image": "./media/img/36.jpg",
+    "link": "https://siglo.com.au/"
+  },
+  {
+    "name": "Goldilocks",
+    "type": "rooftop",
+    "category": "Creative Cocktails",
+    "location": "Denyers, Building Level 5/264 Swanston St, Melbourne VIC 3000, Australia",
+    "description": "Award-winning bar with a creative cocktail menu and cozy atmosphere.",
+    "specialties": ["Creative Cocktails", "Cozy Vibe", "Skilled Bartenders", "Unique Ingredients"],
+    "image": "./media/img/37.jpg",
+    "link": "https://goldilocksbar.com.au/"
+  }
+];
+
+      /* Populate Bars */
+      function loadBars(filter = 'all') { //create a function with parameter 'filter' and set default value is 'all'
+        const container = document.getElementById('barsContainer');
+        container.innerHTML = ''; //remove all displayed bar
+        const filteredBars = filter === 'all' ? barsData : barsData.filter(bar => bar.type === filter); //set filteredBars to the value of the 'filter'
+        filteredBars.forEach(bar => { //Add bars have type value equal filter value
+          //Create HTML as string with each value
+          const barCard = `
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="bar-card">
+                <img src="${bar.image}" alt="${bar.name}" class="bar-image">
+                <div class="bar-content">
+                  <span class="bar-type">${bar.category}</span>
+                  <h3 class="bar-title">${bar.name}</h3>
+                  <p class="bar-location"><i class="fas fa-map-marker-alt me-2"></i>${bar.location}</p>
+                  <p class="bar-description">${bar.description}</p>
+                  <ul class="bar-specialties">
+                    ${bar.specialties.map(specialty => `<li>${specialty}</li>`).join('')}
+                  </ul>
+                  <a href="${bar.link}" class="bar-btn" target="_blank">Visit Bar <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          `;
+          container.innerHTML += barCard; //add bars to display
+        });
+      }
+
+      /* Filter Functionality */
+      document.addEventListener('DOMContentLoaded', function() {// All the things will run when page load complete
+        loadBars();// no need to add value because we have set the default
+        
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            // Filter bars
+            const filter = this.getAttribute('data-filter');
+            loadBars(filter);//Load with filter value
+          });
+        });
+      });
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+    </script>
+  </body>
+</html>

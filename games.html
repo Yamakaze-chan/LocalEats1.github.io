@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Gaming Venues in Melbourne" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Gaming Venues</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/games.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Gaming Venues</h2>
+        <p class="page-subtitle">Find restaurants and bars with entertainment - from arcade games to pool tables and board game nights</p>
+      </div>
+    </section>
+
+    <div class="container my-5">
+  <div class="card border-0 shadow-lg rounded-4">
+    <div class="card-header bg-white border-0 text-center rounded-top-4">
+      <h4 class="fw-semibold text-gold">🎮 Exclusive Game Offers</h4>
+      <p class="text-muted small mb-0">Valid during select calendar dates</p>
+    </div>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-borderless align-middle mb-0">
+          <thead class="bg-light text-navy">
+            <tr class="text-uppercase small">
+              <th>Places</th>
+              <th>Game</th>
+              <th>Offer</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white">
+            <tr>
+              <td><strong>Fortress</strong></td>
+              <td>League of Legends</td>
+              <td><span class="badge rounded-pill bg-success-subtle text-success">Free Drinks</span></td>
+              <td>From May 25 to June 2</td>
+            </tr>
+            <tr>
+              <td><strong>Bartronica</strong></td>
+              <td>Shooting Aliens</td>
+              <td><span class="badge rounded-pill bg-primary-subtle text-primary">+1 Bullet Round</span></td>
+              <td>Only on June 1 and 2</td>
+            </tr>
+            <tr>
+              <td><strong>Ballers Clubhouse</strong></td>
+              <td>All Games</td>
+              <td><span class="badge rounded-pill bg-warning-subtle text-warning">Group Discount</span></td>
+              <td>From May 28 to May 31</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <main class="container mb-5">
+      <div class="row" id="gamingContainer">
+        <!-- Gaming venues will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Gaming Venues Data */
+      const gamingVenues = [
+        {
+          name: "Fortress Melbourne",
+          type: "PC/Console",
+          location: "23 Caledonian Lane, Melbourne, Victoria, 3000",
+          description: "One venue, five distinct experiences. Fortress is a hive for gaming aficionados and novices alike. Enter the dark, moody space and grab a bite to eat at The Tavern, a fantasy-themed bar and eatery with an eclectic cocktail list.",
+          features: ["PC/Console", "Craft Cocktails", "Late Night Food"],
+          image: "./media/img/52.jpg",
+          link: "https://fortress.games/"
+        },
+        {
+          name: "Bartronica",
+          type: "Arcade Games",
+          location: "Basement/335 Flinders Ln, Melbourne VIC 3000, Australia",
+          description: "Enter Bartronica – the bar to be if you’re after tinnie’s, pinnie’s and classic arcade games. Book a booth for a round of Mario Kart with your mates, try your hand at retro arcade games and take advantage of the super chill food and drink menu. ",
+          features: ["500+ Arcade Games", "Beers / Tinnies"],
+          image: "./media/img/53.jpg",
+          link: "https://bartronica.com.au/"
+        },
+        {
+          name: "PixelBar",
+          type: "PC/Console",
+          location: "321 Flinders Lane, Melbourne",
+          description: "Modern bowling alley with gourmet food, signature cocktails, and a vibrant nightlife atmosphere.",
+          features: ["PC/Console", "Gourmet Food", "Signature Cocktails"],
+          image: "./media/img/54.jpg",
+          link: "https://www.pixelbar.com.au/"
+        },
+        {
+          name: "Ballers Clubhouse",
+          type: "various",
+          location: "2 Coverlid Place, Melbourne 3000",
+          description: "Social club, revolutionary super venue – whatever you want to call it, Ballers Clubhouse has redefined the concept of a one-stop shop. In one 2,500sqm mega space, the venue has 10 function spaces, 15 ping-pong tables, six stand-up shuffleboards, six bars, four shuffleboard courts, 16 interactive darts booths… and it goes on and on. Drink, dine, dance and play all in one high-tech, high-style space. ",
+          features: ["Various games", "Local Beers", "Pub Grub", "Tournament Nights"],
+          image: "./media/img/55.jpg",
+          link: "https://www.ballersclubhouse.com.au/venues/melbourne-cbd"
+        }
+      ];
+
+      /* Populate Gaming Venues */
+      function loadGamingVenues() {
+        const container = document.getElementById('gamingContainer');
+        gamingVenues.forEach(venue => {
+          const venueCard = `
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="gaming-card">
+                <img src="${venue.image}" alt="${venue.name}" class="gaming-image">
+                <div class="gaming-content">
+                  <span class="gaming-type">${venue.type}</span>
+                  <h3 class="gaming-title">${venue.name}</h3>
+                  <p class="gaming-location"><i class="fas fa-map-marker-alt me-2"></i>${venue.location}</p>
+                  <p class="gaming-description">${venue.description}</p>
+                  <ul class="gaming-features">
+                    ${venue.features.map(feature => `<li>${feature}</li>`).join('')}
+                  </ul>
+                  <a href="${venue.link}" class="gaming-btn">Visit Venue <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          `;
+          container.innerHTML += venueCard;
+        });
+      }
+
+      /* Initialize */
+      document.addEventListener('DOMContentLoaded', loadGamingVenues);
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Restaurant Menus" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Restaurant Menus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/menu.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Restaurant Menus</h2>
+        <p class="page-subtitle">Explore the finest culinary offerings from Melbourne's top restaurants</p>
+      </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-container">
+          <h2 class="search-title">Find Your Perfect Meal</h2>
+          <input type="text" id="menuSearch" class="search-input" placeholder="Search for restaurants, dishes, or cuisines...">
+          
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-cuisine="all">All Cuisines</button>
+            <button class="filter-btn" data-cuisine="italian">Italian</button>
+            <button class="filter-btn" data-cuisine="japanese">Japanese</button>
+            <button class="filter-btn" data-cuisine="modern-australian">Modern Australian</button>
+            <button class="filter-btn" data-cuisine="mediterranean">Mediterranean</button>
+            <button class="filter-btn" data-cuisine="thai">Thai</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container mb-5">
+      <div id="restaurantMenus">
+        <!-- Restaurant menus will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Restaurant Menu Data */
+      const restaurantMenus = [
+        {
+          id: 1,
+          name: "Trattoria Emilia",
+          cuisine: "italian",
+          address: "360 Little Collins Street, Melbourne",
+          phone: "+61 3 9670 7214",
+          hours: "Mon-Sat: 12PM - 10PM",
+          logo: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=150&h=150&q=80",
+          categories: [
+            {
+              name: "Antipasti",
+              items: [
+                {
+                  name: "Bruschetta al Pomodoro",
+                  description: "Toasted sourdough bread topped with fresh tomatoes, basil, garlic and extra virgin olive oil",
+                  price: "$16",
+                  dietary: ["vegetarian"]
+                },
+                {
+                  name: "Calamari Fritti",
+                  description: "Lightly fried calamari served with lemon and house-made aioli",
+                  price: "$22",
+                  dietary: []
+                },
+                {
+                  name: "Burrata con Prosciutto",
+                  description: "Creamy burrata cheese served with San Daniele prosciutto, rocket and balsamic glaze",
+                  price: "$24",
+                  dietary: ["gluten-free"]
+                }
+              ]
+            },
+            {
+              name: "Pasta",
+              items: [
+                {
+                  name: "Spaghetti alla Carbonara",
+                  description: "Traditional carbonara with pancetta, egg, pecorino cheese and black pepper",
+                  price: "$28",
+                  dietary: []
+                },
+                {
+                  name: "Pappardelle al Ragù",
+                  description: "House-made pappardelle with slow-cooked beef ragù and Parmigiano-Reggiano",
+                  price: "$32",
+                  dietary: []
+                },
+                {
+                  name: "Risotto ai Funghi",
+                  description: "Creamy risotto with mixed wild mushrooms, truffle oil and parmesan",
+                  price: "$30",
+                  dietary: ["vegetarian", "gluten-free"]
+                }
+              ]
+            },
+            {
+              name: "Secondi",
+              items: [
+                {
+                  name: "Bistecca alla Fiorentina",
+                  description: "Grilled T-bone steak with rosemary, garlic and extra virgin olive oil",
+                  price: "$48",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Pesce del Giorno",
+                  description: "Fresh fish of the day served with seasonal vegetables",
+                  price: "$42",
+                  dietary: ["gluten-free"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          name: "Sake Restaurant & Bar",
+          cuisine: "japanese",
+          address: "100 St Kilda Road, Melbourne",
+          phone: "+61 3 9671 3333",
+          hours: "Mon-Sun: 12PM - 11PM",
+          logo: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=150&h=150&q=80",
+          categories: [
+            {
+              name: "Sushi & Sashimi",
+              items: [
+                {
+                  name: "Chef's Selection Sashimi",
+                  description: "Premium selection of fresh sashimi chosen by our head chef",
+                  price: "$38",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Signature Nigiri Set",
+                  description: "8 pieces of chef's signature nigiri sushi",
+                  price: "$32",
+                  dietary: []
+                },
+                {
+                  name: "Dragon Roll",
+                  description: "Inside-out roll with prawn tempura, avocado and unagi sauce",
+                  price: "$24",
+                  dietary: []
+                }
+              ]
+            },
+            {
+              name: "Small Plates",
+              items: [
+                {
+                  name: "Miso Black Cod",
+                  description: "Marinated black cod with sweet miso, served with pickled radish",
+                  price: "$36",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Agedashi Tofu",
+                  description: "Lightly fried silken tofu in dashi broth with spring onion",
+                  price: "$18",
+                  dietary: ["vegetarian"]
+                },
+                {
+                  name: "Wagyu Tataki",
+                  description: "Seared wagyu beef with ponzu dressing and garlic chips",
+                  price: "$28",
+                  dietary: []
+                }
+              ]
+            },
+            {
+              name: "Main Dishes",
+              items: [
+                {
+                  name: "Teriyaki Salmon",
+                  description: "Grilled salmon fillet with teriyaki glaze and seasonal vegetables",
+                  price: "$34",
+                  dietary: []
+                },
+                {
+                  name: "Wagyu Teppanyaki",
+                  description: "Grade 9+ wagyu beef cooked on teppan with mushrooms and asparagus",
+                  price: "$52",
+                  dietary: ["gluten-free"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 3,
+          name: "Attica",
+          cuisine: "modern-australian",
+          address: "74 Glen Eira Road, Ripponlea",
+          phone: "+61 3 9530 0111",
+          hours: "Tue-Sat: 6PM - 10PM",
+          logo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=150&h=150&q=80",
+          categories: [
+            {
+              name: "Tasting Menu",
+              items: [
+                {
+                  name: "Seasonal Tasting Menu",
+                  description: "Our signature multi-course tasting menu showcasing the finest Australian ingredients and native flavors",
+                  price: "$320 per person",
+                  dietary: []
+                },
+                {
+                  name: "Vegetarian Tasting Menu",
+                  description: "A plant-based journey through Australia's unique culinary landscape",
+                  price: "$320 per person",
+                  dietary: ["vegetarian"]
+                }
+              ]
+            },
+            {
+              name: "Beverage Pairings",
+              items: [
+                {
+                  name: "Premium Wine Pairing",
+                  description: "Carefully selected wines to complement each course of your tasting menu",
+                  price: "$185 per person",
+                  dietary: []
+                },
+                {
+                  name: "Non-Alcoholic Pairing",
+                  description: "House-made juices, infusions and fermented drinks paired with each course",
+                  price: "$120 per person",
+                  dietary: ["non-alcoholic"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 4,
+          name: "Hellenic Republic",
+          cuisine: "mediterranean",
+          address: "434 Lygon Street, Brunswick East",
+          phone: "+61 3 9381 1222",
+          hours: "Mon-Sun: 5PM - 10PM",
+          logo: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=150&h=150&q=80",
+          categories: [
+            {
+              name: "Mezedes",
+              items: [
+                {
+                  name: "Taramosalata",
+                  description: "Traditional fish roe dip with pita bread",
+                  price: "$16",
+                  dietary: []
+                },
+                {
+                  name: "Saganaki",
+                  description: "Kefalograviera cheese pan-fried with lemon and oregano",
+                  price: "$18",
+                  dietary: ["vegetarian", "gluten-free"]
+                },
+                {
+                  name: "Spanakopita",
+                  description: "Spinach and feta filo pastry pie",
+                  price: "$16",
+                  dietary: ["vegetarian"]
+                }
+              ]
+            },
+            {
+              name: "From The Grill",
+              items: [
+                {
+                  name: "Souvlaki",
+                  description: "Choice of chicken, lamb or pork skewers with tzatziki and pita",
+                  price: "$32",
+                  dietary: []
+                },
+                {
+                  name: "Whole Fish",
+                  description: "Grilled whole market fish with lemon, oregano and olive oil",
+                  price: "$42",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Mixed Grill",
+                  description: "Selection of grilled meats with Greek salad and chips",
+                  price: "$48",
+                  dietary: []
+                }
+              ]
+            },
+            {
+              name: "Sides",
+              items: [
+                {
+                  name: "Greek Salad",
+                  description: "Tomatoes, cucumber, red onion, feta and Kalamata olives",
+                  price: "$16",
+                  dietary: ["vegetarian", "gluten-free"]
+                },
+                {
+                  name: "Hand-cut Chips",
+                  description: "Seasoned with oregano and feta",
+                  price: "$12",
+                  dietary: ["vegetarian", "gluten-free"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 5,
+          name: "Longrain",
+          cuisine: "thai",
+          address: "44 Little Bourke Street, Melbourne",
+          phone: "+61 3 9671 3151",
+          hours: "Tue-Sat: 6PM - 11PM",
+          logo: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=150&h=150&q=80",
+          categories: [
+            {
+              name: "Small Plates",
+              items: [
+                {
+                  name: "Betel Leaves",
+                  description: "Filled with prawn, peanuts, lime and chili",
+                  price: "$6 each",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Son-in-Law Eggs",
+                  description: "Deep-fried eggs with chili jam and herbs",
+                  price: "$16",
+                  dietary: ["vegetarian", "gluten-free"]
+                },
+                {
+                  name: "Salt & Pepper Squid",
+                  description: "With nuoc cham dipping sauce and lime",
+                  price: "$22",
+                  dietary: ["gluten-free"]
+                }
+              ]
+            },
+            {
+              name: "Curries & Stir-fries",
+              items: [
+                {
+                  name: "Green Curry",
+                  description: "Free-range chicken with Thai eggplant and basil",
+                  price: "$34",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Massaman Curry",
+                  description: "Slow-cooked beef with potatoes, peanuts and tamarind",
+                  price: "$36",
+                  dietary: ["gluten-free"]
+                },
+                {
+                  name: "Stir-fried Prawns",
+                  description: "With ginger, snow peas and yellow beans",
+                  price: "$38",
+                  dietary: ["gluten-free"]
+                }
+              ]
+            },
+            {
+              name: "Rice & Noodles",
+              items: [
+                {
+                  name: "Pad Thai",
+                  description: "Classic rice noodles with tofu, bean sprouts and peanuts",
+                  price: "$28",
+                  dietary: ["vegetarian"]
+                },
+                {
+                  name: "Coconut Rice",
+                  description: "Jasmine rice steamed with coconut cream",
+                  price: "$6 per person",
+                  dietary: ["vegetarian", "gluten-free"]
+                }
+              ]
+            }
+          ]
+        }
+      ];
+
+      /* Populate Restaurant Menus */
+      function loadRestaurantMenus(cuisine = 'all') {
+        const container = document.getElementById('restaurantMenus');
+        container.innerHTML = ''; //clear all display restaurant
+        const filteredRestaurants = cuisine === 'all' ? 
+          restaurantMenus : 
+          restaurantMenus.filter(restaurant => restaurant.cuisine === cuisine); //get all restaurants have cusine equal filter value
+        //Add all restaurants fit condition to display
+        filteredRestaurants.forEach(restaurant => {
+          let menuHTML = `
+            <div class="restaurant-card" data-cuisine="${restaurant.cuisine}">
+              <div class="restaurant-header">
+                <img src="${restaurant.logo}" alt="${restaurant.name}" class="restaurant-logo">
+                <h2 class="restaurant-name">${restaurant.name}</h2>
+                <span class="restaurant-cuisine">${restaurant.cuisine.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+                <p class="restaurant-info"><i class="fas fa-map-marker-alt"></i>${restaurant.address}</p>
+                <p class="restaurant-info"><i class="fas fa-phone"></i>${restaurant.phone}</p>
+                <p class="restaurant-info"><i class="fas fa-clock"></i>${restaurant.hours}</p>
+              </div>
+              <div class="menu-container">
+          `;
+          restaurant.categories.forEach(category => {
+            menuHTML += `
+              <div class="menu-category">
+                <h3 class="category-title">${category.name}</h3>
+                <div class="menu-items">
+            `;
+            category.items.forEach(item => {
+              menuHTML += `
+                <div class="menu-item">
+                  <h4 class="item-name">${item.name}</h4>
+                  <p class="item-description">${item.description}</p>
+                  <p class="item-price">${item.price}</p>
+                  ${item.dietary.length > 0 ? 
+                    `<div class="dietary-info">
+                      ${item.dietary.map(diet => `<span class="dietary-badge">${diet}</span>`).join('')}
+                    </div>` : ''}
+                </div>
+              `;
+            });
+            menuHTML += `
+                </div>
+              </div>
+            `;
+          });
+          menuHTML += `
+              </div>
+            </div>
+          `;
+          container.innerHTML += menuHTML;
+        });
+      }
+
+      /* Search Functionality */
+      function searchMenus() {
+        const searchTerm = document.getElementById('menuSearch').value.toLowerCase();
+        const restaurantCards = document.querySelectorAll('.restaurant-card');
+        restaurantCards.forEach(card => {
+          const restaurantText = card.textContent.toLowerCase(); //Lower all text inside input
+          if (restaurantText.includes(searchTerm)) { //if restaurant's name contains input value
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      /* Initialize */
+      document.addEventListener('DOMContentLoaded', function() {
+        loadRestaurantMenus();
+        // Search functionality
+        document.getElementById('menuSearch').addEventListener('keyup', searchMenus);
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            // Filter restaurants
+            const cuisine = this.getAttribute('data-cuisine');
+            loadRestaurantMenus(cuisine);
+          });
+        });
+      });
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+    </script>
+  </body>
+</html>

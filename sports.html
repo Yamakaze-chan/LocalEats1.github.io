@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Sports Bars in Melbourne" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Sports Bars</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/sports.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Sports Bars</h2>
+        <p class="page-subtitle">Watch the game at Melbourne's best sports bars with big screens, great atmosphere, and cold drinks</p>
+      </div>
+    </section>
+
+    <main class="container mb-5">
+      <div class="row" id="sportsContainer">
+        <!-- Sports bars will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Sports Bars Data */
+      const sportsBars = [
+        {
+          name: "Kicks",
+          type: "Multi-Sport",
+          location: "Level 1/450 Elizabeth St, Melbourne VIC 3000, Australia",
+          description: "Melbourne's finest sports bar and diner. Showing the best sport from around the globe on the biggest and best Tv's. Featuring multiple big screen Tv's, projectors Retro gaming, Foosball table and a custom built Pool table. All complimented by fantastic food and beverage options. Great drink specials everyday of the week. Open until late every night. If you're looking to watch something and its not listed, give us a call and we'll do our very best to get it on for you.",
+          features: ["Premium Screens", "Gourmet Menu", "International Sports", "VIP Booths"],
+          image: "./media/img/56.jpg",
+          link: "https://www.kicksmelbourne.com.au/"
+        },
+        {
+          name: "Turf Sports Bar",
+          type: "Craft Beer Sports",
+          location: "131 Queen St, Melbourne VIC 3000, Australia",
+          description: "In the heart of the CBD, Turf Sports Bar is a traditional Australian venue with large screens private booths, a large bar and restaurant. The premise itself has wealth of history",
+          features: ["Cold Beers", "Boasting Screens", "Pool & Darts"],
+          image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
+          link: "https://turfbar.com.au/"
+        }
+      ];
+
+      /* Populate Sports Bars */
+      function loadSportsBars() {
+        const container = document.getElementById('sportsContainer');
+        sportsBars.forEach(bar => {
+          const barCard = `
+            <div class="col-lg-4 col-md-6">
+              <div class="sports-card">
+                <img src="${bar.image}" alt="${bar.name}" class="sports-image">
+                <div class="sports-content">
+                  <span class="sports-type">${bar.type}</span>
+                  <h3 class="sports-title">${bar.name}</h3>
+                  <p class="sports-location"><i class="fas fa-map-marker-alt me-2"></i>${bar.location}</p>
+                  <p class="sports-description">${bar.description}</p>
+                  <ul class="sports-features">
+                    ${bar.features.map(feature => `<li>${feature}</li>`).join('')}
+                  </ul>
+                  <a href="${bar.link}" class="sports-btn">Watch Here <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          `;
+          container.innerHTML += barCard;
+        });
+      }
+
+      /* Initialize */
+      document.addEventListener('DOMContentLoaded', loadSportsBars);
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+    </script>
+  </body>
+</html>

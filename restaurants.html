@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Melbourne's Premium Food Guide" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Restaurants</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/restaurants.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Exquisite Dining Destinations</h2>
+        <p class="page-subtitle">Discover Melbourne's finest culinary establishments, from intimate bistros to award-winning restaurants</p>
+      </div>
+    </section>
+
+    <main class="container mb-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <h2 class="category-title">Cuisine Categories</h2>
+            <div class="category-group">
+              <div class="open-category-list">
+                <span>All</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <ul class="category-list">
+                <li class="category-item active" data-category="*">All</li>
+                <li class="category-item" data-category="Fine-dining">Fine Dining</li>
+                <li class="category-item" data-category="Modern">Modern</li>
+                <li class="category-item" data-category="Bistro">Bistro</li>
+                <li class="category-item" data-category="Fusion">Fusion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="restaurants">
+            <!-- restaurants will be dynamically added here -->
+          </div>
+          <div class="no-item">
+            There are no restaurants in this category!
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Modal -->
+      <div class="modal fade" id="restaurantModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="restaurantModalTitle">Restaurant Name</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="row g-4 align-items-start">
+                <!-- Info Column -->
+                <div class="col-md-7">
+                  <h6 class="text-uppercase mb-2">Overview</h6>
+                  <p class="mb-4" id="restaurantModalOverview">
+                    Restaurant description will appear here.
+                  </p>
+
+                  <h6 class="text-uppercase mb-2">Specialities</h6>
+                  <ul class="mb-4" id="restaurantModalSpecial">
+                    <!-- Specialties will be added here -->
+                  </ul>
+
+                  <h6 class="text-uppercase mb-2">Chef</h6>
+                  <p class="mb-4" id="restaurantModalChef">
+                    Chef information will appear here.
+                  </p>
+
+                  <h6 class="text-uppercase mb-2">Price Range</h6>
+                  <p id="restaurantModalPrice">Price information will appear here.</p>
+
+                  <h6 class="text-uppercase mb-2">Open Hours</h6>
+                  <ul class="mb-4" id="restaurantModalOpenHours">
+                    <!-- Specialties will be added here -->
+                  </ul>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-md-5">
+                  <div class="image-container mb-3">
+                    <img
+                      id="restaurantModalImage"
+                      src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+                      alt="Restaurant"
+                      class="img-fluid w-100"
+                    >
+                  </div>
+                  <div class="image-container mb-3">
+                    <img
+                      id="restaurantModalFoodImage"
+                      src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+                      alt="Restaurant"
+                      class="img-fluid w-100"
+                    >
+                  </div>
+                  <div class="text-muted">
+                    <p><i class="fas fa-map-marker-alt text-gold me-2"></i><span id="restaurantModalLocation">Location will appear here</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="#" id="restaurantModalLink" target="_blank" class="btn btn-primary">Visit Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Restaurant Data */
+      const restaurantsData = [
+  {
+    "name": "Vue de Monde",
+    "category": "Fine-dining",
+    "overview": "Vue de Monde offers a modern Australian fine-dining experience with panoramic views of Melbourne, focusing on seasonal and sustainable ingredients.",
+    "special": ["Chef's Tasting Menu", "Native Australian Ingredients", "Wine Pairing"],
+    "chef": "Shannon Bennett",
+    "price": "200-300",
+    "openhours": [
+      "Wednesday – Thursday |  18:00 – 00:00",
+      "Friday – Saturday |  12:00 – 16:00 , 18:00 - 00:00"
+    ],
+    "link": "https://www.vuedemonde.com.au/",
+    "location": "55 Rialto Towers, 525 Collins St, Melbourne VIC 3000, Australia",
+    "image": "./media/img/38.jpg",
+    "foodImg": "./media/img/39.jpg"
+  },
+  {
+    "name": "Embla",
+    "category": "Modern",
+    "overview": "Embla is a modern Australian restaurant known for its flame-licked menu and natural wines, offering dishes like braised zucchini flowers and raw beef with fermented peppers.",
+    "special": ["Braised Zucchini Flowers", "Raw Beef with Fermented Peppers", "Natural Wines"],
+    "chef": "Dave Verheul",
+    "price": "60-100",
+    "openhours": [
+      "Monday - Tuesday | 15:00 - 00:00 ",
+"Wednesday - Saturday | 12:00 - 00:00",
+"Sunday | 12:00 - 17:00"
+    ],
+    "link": "https://www.embla.com.au/",
+    "location": "122 Russell St, Melbourne VIC 3000, Australia",
+    "image": "./media/img/40.jpg",
+    "foodImg": "./media/img/41.jpg"
+  },
+  {
+    "name": "Chancery Lane",
+    "category": "Bistro",
+    "overview": "Chancery Lane is a classic European bistro with a modern twist, offering a menu that showcases seasonal ingredients and European techniques.",
+    "special": ["Duck Liver Parfait", "Steak Frites", "Crème Brûlée"],
+    "chef": "Scott Pickett",
+    "price": "70-120",
+    "openhours": [
+      "Monday – Saturday | 18:00 – 00:00"
+    ],
+    "link": "https://chancerylane.com.au/",
+    "location": "430 Little Collins St, Melbourne VIC 3000, Australia",
+    "image": "./media/img/42.jpg",
+    "foodImg": "./media/img/43.jpg"
+  },
+  {
+    "name": "Supernormal",
+    "category": "Fusion",
+    "overview": "Supernormal offers a modern Asian dining experience with a menu inspired by the flavors of Tokyo, Shanghai, Seoul, and Hong Kong.",
+    "special": ["New England Lobster Roll", "Szechuan Chicken Wings", "Peanut Butter Parfait"],
+    "chef": "Andrew McConnell",
+    "price": "60-100",
+    "openhours": [
+      "Monday - Sunday | 12:00 – 00:00"
+    ],
+    "link": "https://supernormal.net.au/",
+    "location": "180 Flinders Ln, Melbourne VIC 3000, Australia",
+    "image": "./media/img/44.jpg",
+    "foodImg": "./media/img/45.jpg"
+  },
+  {
+    "name": "Sunda",
+    "category": "Fusion",
+    "overview": "Sunda is a modern-Asian restaurant blending Malaysian, Indonesian, and Vietnamese flavors to create innovative dishes in a unique setting.",
+    "special": ["Chickpea Cake", "Berkshire Pork", "Koshihikari Congee"],
+    "chef": "Khanh Nguyen",
+    "price": "80-120",
+    "openhours": [
+      "Thursday - Saturday | 17:00 – 21:00"
+    ],
+    "link": "https://sunda.com.au/",
+    "location": "18 Punch Ln, Melbourne VIC 3000, Australia",
+    "image": "./media/img/46.jpg",
+    "foodImg": "./media/img/47.jpg"
+  }
+]
+;
+
+      /* Populate Restaurants */
+      restaurantsData.forEach((data, index) => {
+        $('.restaurants').append(`
+          <div class="restaurant-item" data-category="${data.category}">
+            <img src="${data.image}" alt="${data.name}">
+            <div class="restaurant-body">
+              <div class="restaurant-category">${data.category}</div>
+              <h3>${data.name}</h3>
+              <button type="button" class="view-detail-btn" data-index="${index}" data-bs-toggle="modal" data-bs-target="#restaurantModal">View Details</button>
+            </div>
+          </div>
+        `);
+      });
+
+      /* Modal Detail View */
+      $(document).on('click', '.view-detail-btn', function() {
+        const index = $(this).data('index');
+        const data = restaurantsData[index];
+        //Change the display vlues of modal
+        $('#restaurantModalTitle').text(data.name);
+        $('#restaurantModalImage').attr('src', data.image || 'placeholder.jpg');
+        $('#restaurantModalFoodImage').attr('src', data.foodImg || 'placeholder.jpg');
+        $('#restaurantModalChef').html(`<strong>${data.chef}</strong> – Executive Chef`);
+        $('#restaurantModalPrice').html(`<strong>$${data.price}</strong> AUD per person`);
+        $('#restaurantModalSpecial').html(data.special.map(s => `<li>${s}</li>`).join(''));
+        $('#restaurantModalOverview').text(data.overview);
+        $('#restaurantModalLocation').text(data.location);
+        $('#restaurantModalLink').attr('href', data.link);
+        $('#restaurantModalOpenHours').html(data.openhours.map(s => `<li>${s}</li>`).join(''));
+      });
+
+      /* Category Filter */
+      $("body").on("click", ".category-item:not(.active)", function() {
+        var category = $(this).attr("data-category");
+        var visibleItem = 0;
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".open-category-list span").text($(this).text());
+
+        if (category != "*") {
+          $(".restaurant-item").hide();
+          $(".restaurant-item[data-category='" + category + "']").show();
+          visibleItem = $(".restaurant-item[data-category='" + category + "']").length;
+        } else {
+          $(".restaurant-item").show();
+          visibleItem = $(".restaurant-item").length;
+        }
+
+        visibleItem == 0 ? $(".no-item").show() : $(".no-item").hide();
+
+        if (isOpened == 1) {
+          $(".category-group.active .category-list").slideUp(300);
+          $(".category-group.active").removeClass("active");
+        }
+      });
+
+      var isOpened = 0;
+      $(".open-category-list").click(function() {
+        $(this).parent().toggleClass("active");
+        $(this).siblings(".category-list").slideToggle(300);
+        isOpened = 1;
+      });
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+
+      /* Modal Backdrop Fix */
+      const modalEl = document.getElementById('restaurantModal');
+      modalEl.addEventListener('hidden.bs.modal', () => {
+        const backdrops = document.querySelectorAll('.modal-backdrop');
+        backdrops.forEach(backdrop => backdrop.remove());
+        document.body.classList.remove('modal-open');
+        document.body.style.paddingRight = '';
+      });
+    </script>
+  </body>
+</html>

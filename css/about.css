@@ -1,0 +1,158 @@
+.story-section {
+  background-color: white;
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story-title {
+  color: var(--navy);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.story-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--gold);
+}
+
+.story-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--dark-gray);
+}
+
+.story-highlight {
+  background-color: var(--cream);
+  padding: 40px;
+  border-radius: 0 30px 0 30px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.story-highlight::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  font-size: 4rem;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+}
+
+.highlight-text {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.highlight-author {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+  background-color: var(--cream);
+}
+
+.values-title {
+  color: var(--navy);
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.values-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--gold);
+}
+
+.value-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 0 30px 0 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  text-align: center;
+  height: 100%;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.value-title {
+  color: var(--navy);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.value-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+.value-description {
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .story-title, .values-title{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-title, .values-title{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .story-highlight {
+    padding: 20px;
+  }
+  .value-card {
+    padding: 30px 20px;
+  }
+}

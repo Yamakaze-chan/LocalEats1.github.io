@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Melbourne's Premium Food Guide" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Career Opportunities</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/booking.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Book Your Table with Ease</h2>
+        <p class="page-subtitle">From fine dining to local gems, reserve your spot at Melbourne CBD’s top restaurants—quickly and effortlessly, all in one place.</p>
+      </div>
+    </section>
+
+    <main class="container mb-5">
+      <h1>Select a Restaurant to Reserve</h1>
+      <!-- Input for get restaurant name -->
+      <input id="search" type="text" placeholder="Restaurant's name" style="width: 100%;
+      border-bottom: #000 solid 2px; 
+      border-top: none; border-right: none; border-left: none">
+      <!-- List of restaurant for autocomplete -->
+        <ul id="restaurantsList"></ul>
+        <!-- Iframe to display real page for reservation (Caustion: Don't try to pick reservation because this will send message direct to that restaurant) -->
+        <iframe id="reserveTable"></iframe> 
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+        // Set default luxury placeholder content
+const luxuryPlaceholder = `
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #ffffff, #f9f6f1);
+      font-family: 'Cormorant Garamond', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2a2a2a;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 3rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      border: 1px solid #e6e1dc;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 2.8em;
+      color: #b3985f; /* Elegant gold */
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: #b3985f;
+      margin: 1.2rem auto;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .flourish {
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 15px);
+      width: 30px;
+      height: 30px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ornament_gold_01.svg/50px-Ornament_gold_01.svg.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.6;
+    }
+  </style>
+
+  <div class="container">
+    <div class="flourish"></div>
+    <h2>Melbourne’s Premier Dining</h2>
+    <div class="divider"></div>
+    <p>
+      Discover exquisite restaurants, curated menus, and unforgettable experiences. <br>
+      Select a destination above to begin your culinary journey.
+    </p>
+  </div>
+`;
+
+       const words = [ //restaurant's name for auto complete
+        "NOMA D",
+    "Reine & La Rue",
+    "Society",
+    "Gimlet at Cavendish House",
+    "Askal",
+    "Flower Drum",
+    "Grossi Florentino",
+    "Sunda Dining",
+    "Supernormal"
+  ];
+
+  const containerEl = document.querySelector('.container');
+  const formEl = document.querySelector('#search');
+  const dropEl = document.querySelector('#restaurantsList');
+  const iframeEl = document.querySelector('#reserveTable');
+
+  const reservationLinks = { //Dictionary to get link for reservation
+    "NOMA D": "https://www.sevenrooms.com/explore/nomadmelbourne/reservations/create/search",
+    "Reine & La Rue": "https://reineandlarue.com.au",
+    "Society": "https://societyrestaurant.com",
+    "Gimlet at Cavendish House": "https://gimlet.melbourne",
+    "Askal": "https://www.broadsheet.com.au/melbourne/fitzroy/restaurants/askal",
+    "Flower Drum": "http://flowerdrum.melbourne",
+    "Grossi Florentino": "https://www.grossiflorentino.com",
+    "Sunda Dining": "https://sunda.com.au",
+    "Supernormal": "https://www.sevenrooms.com/explore/supernormalaustralia/reservations/create/search"
+  };
+
+  formEl.addEventListener('input', (e) => { //Add event on change input value
+    const userInput = e.target.value.toLowerCase();
+
+    if (userInput.length === 0) { //close suggestions if input empty
+      dropEl.style.height = 0;
+      dropEl.innerHTML = '';
+    }
+
+    const filteredWords = words.filter(word => word.toLowerCase().includes(userInput)).sort().slice(0, 5); //Filter word based on input value
+
+    dropEl.innerHTML = '';//refresh suggestions
+    filteredWords.forEach(item => {
+      const listEl = document.createElement('li'); //create li for ul (line in suggestions)
+      listEl.textContent = item;
+      listEl.style.cursor = 'pointer';
+      listEl.addEventListener('click', () => { // add event for that line
+        formEl.value = item;
+        dropEl.innerHTML = '';
+        dropEl.style.height = 0;
+
+        // Update iframe src
+        if (item && reservationLinks[item]) {
+          iframeEl.src = reservationLinks[item];
+        iframeEl.removeAttribute('srcdoc'); // Clear srcdoc so src loads
+      } else {
+        iframeEl.removeAttribute('src'); // Clear src
+        iframeEl.srcdoc = luxuryPlaceholder
+        }
+      });
+      dropEl.appendChild(listEl);//add line to list of suggestions
+    });
+
+    dropEl.style.height = filteredWords.length * 40 + 'px'; // Adjust height based on list items
+  });
+
+// Set the placeholder initially
+iframeEl.srcdoc = luxuryPlaceholder;
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+
+      //Add pop-up and alert box because of requirements
+      if(confirm('Contact us now to get 15% off coupon')) {
+        window.location.replace("contact.html");
+      } else {
+        alert("Don't worry, you can contact at anytime")
+      }
+    </script>
+  </body>
+</html>

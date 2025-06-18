@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Melbourne's Premium Food Guide" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Career Opportunities</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2 class="page-title text-font-1">Discover Melbourne’s Finest Dining</h2>
+        <p class="page-subtitle">Explore a curated selection of top restaurants in Melbourne’s CBD. From fine dining to modern fusion, these venues showcase the city’s diverse culinary scene.</p>
+      </div>
+    </section>
+
+    <main class="container mb-5">
+      <ul id="hexGrid">
+        <!-- Events will be dynamically loaded here -->
+</ul>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <button class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+      <button class="modal-nav-btn modal-prev">&larr;</button>
+      <button class="modal-nav-btn modal-next">&rarr;</button>
+      <div class="modal-body">
+        <img src="./media/img/1.jpg" class="modal-img" alt="Full Image">
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h1 class="footer-logo text-font-1">LocalEats</h1>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const imgData = [ //list of images
+    "media/img/19.jpg",
+    "media/img/20.jpg",
+    "media/img/21.jpg",
+    "media/img/22.jpg",
+    "media/img/23.jpg"
+  ];
+
+  const galleryList = document.getElementById('hexGrid');
+  let currentIndex = 0;
+
+  imgData.forEach((data, index) => {
+    const col = document.createElement('li'); //create  <li></li>
+    col.className = "hex"; //add class                  <li class="hex"></li>
+    col.innerHTML = ` 
+    <a class="hexIn">
+      <img src="${data}" 
+           class="gallery-img" 
+           data-bs-toggle="modal" 
+           data-bs-target="#imageModal" 
+           data-bs-img="${data}" 
+           data-index="${index}"
+           alt="Gallery Image ${index + 1}">
+    </a>
+    `;//Add li content                                  <li class="hex">...</li>
+    galleryList.appendChild(col);//Add li to #hexGrid
+  });
+
+  // Modal Part
+  const modal = document.getElementById('imageModal');
+  const modalImg = modal.querySelector('.modal-img');
+  const prevBtn = modal.querySelector('.modal-prev');
+  const nextBtn = modal.querySelector('.modal-next');
+  const galleryImages = () => document.querySelectorAll('.gallery-img');//get all tag have class 'gallery-img'
+
+  // Open modal
+  galleryList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('gallery-img')) {
+      currentIndex = parseInt(e.target.getAttribute('data-index'));
+      modalImg.src = imgData[currentIndex];
+    }
+  });
+
+  // Navigate
+  prevBtn.addEventListener('click', () => { //Click to previous image
+    currentIndex = (currentIndex - 1 + imgData.length) % imgData.length;
+    modalImg.src = imgData[currentIndex];
+  });
+
+  nextBtn.addEventListener('click', () => { //Click to next image
+    currentIndex = (currentIndex + 1) % imgData.length;
+    modalImg.src = imgData[currentIndex];
+  });
+
+      /* Navbar scroll */
+      $(function() {
+        var nav = $(".navbar"),
+            doc = $(document),
+            win = $(window);
+
+        win.scroll(function() {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+    </script>
+  </body>
+</html>

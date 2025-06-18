@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="LocalEats - Melbourne's Premium Food Guide" >
+    <meta name="author" content="A.K." >
+
+    <title>LocalEats - Melbourne's Premium Food Guide</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header>
+      <!-- Google with keyword "Navbar Bootstrap" for more information -->
+      <nav class="navbar navbar-expand-xl fixed-top" style="padding: 0;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-font-1" style="margin-left:20px" href="index.html">LocalEats</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars text-gold"></i>
+          </button>
+          <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurants</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="bars.html">Bars</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+<li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section d-flex align-items-center" id="home">
+        <!-- play video in the background -->
+        <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.3); transition: transform 0.5s ease;">
+          <source class="hero-image" src="./media/0522(1).mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container-fluid hero-content text-center">
+          <h2 class="hero-title text-font-1 fade-in">LocalEats</h2>
+          <p class="hero-subtitle mx-auto fade-in">Discover Melbourne's finest culinary experiences, curated for the discerning palate.</p>
+          <div class="mt-5 fade-in">
+            <!-- Auto scroll to About section -->
+            <a href="#about" class="btn btn-gold px-4 py-3 me-3">Explore Our Selection</a> 
+            <!-- Redirect to contact page -->
+            <a href="contact.html" class="btn btn-outline-gold px-4 py-3 mt-2">Contact Us</a>
+          </div>
+
+          <div class="music-player transparent-player">
+            <!-- Audio will auto play at the beginning, and user can pause it -->
+  <audio id="audio" src="./media/music/日本文化についての本を読むことで多くの有益な知識を得られる.mp3" autoplay></audio>
+  <div class="controls">
+    <button id="playBtn" class="play-toggle">&#10074;&#10074;</button>
+    <div class="track-info">
+      <!-- Name of the audio -->
+      <span class="title">日本文化についての本を読むことで多くの有益な知識を得られる</span> 
+    </div>
+  </div>
+  <div class="soundwave-container">
+    <div class="soundwave" id="wave">
+      <!-- Soundwave with animation -->
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+</div>
+
+        </div>
+        <div class="hero-diagonal" style="background-color: #F9F5E9;"></div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section bg-cream" id="about">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h5 class="section-title">About Us</h5>
+            <h2 class="section-heading text-font-1">LocalEats</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="position-relative">
+                <img
+                  class="img-fluid about-image"
+                  src="https://static.wixstatic.com/media/11062b_69ab699a87f9451d8ca3ba4f7114618d~mv2.jpeg/v1/fill/w_640,h_648,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_69ab699a87f9451d8ca3ba4f7114618d~mv2.jpeg"
+                  alt="About LocalEats"
+                >
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="mb-4">
+                <h2 class="mb-4 text-navy">Melbourne's Premier Culinary Guide</h2>
+                <p class="lead text-navy mb-4">
+                  At <strong class="text-gold" style="font-weight: 900;">LocalEats</strong>, we believe Melbourne's food scene
+                  is more than just a list of restaurants — it's a living, evolving
+                  culture waiting to be explored. Whether you're a local foodie or a
+                  curious visitor, our goal is to help you discover the full flavor
+                  of the city, one bite at a time.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="about-card">
+                    <h4>Quality and Character</h4>
+                    <p class="mb-0">
+                      Every spot is chosen for its standout dishes and unique
+                      setting — no paid placements, no filler, just honest
+                      recommendations.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="about-card">
+                    <h4>Flavor and Feel</h4>
+                    <p class="mb-0">
+                      We highlight both the taste and the vibe — from cozy corners
+                      to vibrant spaces, and dishes that leave a lasting
+                      impression.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Restaurants Section -->
+      <section class="section" id="restaurants">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h5 class="section-title">Exquisite Selection</h5>
+            <h2 class="section-heading text-font-1">Restaurants & Bars</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="mb-4 text-navy">Melbourne's Finest Establishments</h2>
+              <p class="mb-4 lead">
+                From buzzing rooftop bars to intimate dining spots, LocalEats brings
+                you Melbourne's best places to eat, sip, and unwind. Each venue is
+                chosen for its standout menu and memorable vibe — whether you're
+                chasing craft cocktails, a perfect steak, or just the right lighting
+                for date night.
+              </p>
+              <p class="mb-4">
+                Think cozy, cool, and full of character — just how Melbourne does it
+                best.
+              </p>
+              <div class="row g-4 mb-4">
+                <div class="col-sm-6">
+                  <div class="counter-box d-flex align-items-center">
+                    <h2 class="counter-number me-3">10</h2>
+                    <div>
+                      <p class="mb-0 text-muted">...and more</p>
+                      <h6 class="text-uppercase mb-0 text-navy">Restaurants</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="counter-box d-flex align-items-center">
+                    <h2 class="counter-number me-3">5</h2>
+                    <div>
+                      <p class="mb-0 text-muted">...and more</p>
+                      <h6 class="text-uppercase mb-0 text-navy">Bars</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="restaurants.html" class="btn btn-gold px-4 py-3 mt-3">Discover More</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-6">
+                  <img
+                    class="img-fluid gallery-image w-100"
+                    src="media/img/3.jpg"
+                    alt="Restaurant"
+                  >
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid gallery-image w-75"
+                    src="media/img/4.jpg"
+                    alt="Restaurant"
+                    style="margin-top: 25%"
+                  >
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid gallery-image w-75"
+                    src="media/img/5.jpg"
+                    alt="Restaurant"
+                  >
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid gallery-image w-100"
+                    src="media/img/6.jpg"
+                    alt="Restaurant"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section bg-cream" id="services">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h5 class="section-title">Premium Experiences</h5>
+            <h2 class="section-heading text-font-1">Our Services</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="service-tabs">
+            <ul class="nav nav-pills justify-content-center mb-5">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#games">Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#sports">Sports</a>
+              </li>
+            </ul>
+            
+            <div class="tab-content">
+              <div id="games" class="tab-pane fade show active">
+                <div class="service-content">
+                  <div class="row align-items-center">
+                    <div class="col-lg-7">
+                      <h2 class="mb-4 text-gold">Entertainment & Games</h2>
+                      <p class="lead mb-4">
+                        Good food, great drinks—and a little friendly competition.
+                        Discover Melbourne's restaurants and bars that serve up more
+                        than just plates. From arcade machines to pool tables and
+                        board games, these spots blend bites with play for a night
+                        that's anything but ordinary.
+                      </p>
+                      <p class="mb-4">Eat, drink, and game on.</p>
+                      <a href="games.html" class="btn btn-gold px-4 py-2 mt-3">View Venues</a>
+                    </div>
+                    <div class="col-lg-5">
+                      <img
+                        src="media/img/7.jpg"
+                        alt="Games"
+                        class="img-fluid service-image"
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="events" class="tab-pane fade">
+                <div class="service-content">
+                  <div class="row align-items-center">
+                    <div class="col-lg-7">
+                      <h2 class="mb-4 text-gold">Curated Events</h2>
+                      <p class="lead mb-4">
+                        Food is just the beginning. From pop-up dinners and themed
+                        nights to live music and weekend markets, our handpicked
+                        events bring Melbourne's dining scene to life. Whether
+                        you're chasing something casual or a little out of the
+                        ordinary, there's always something happening — and we'll
+                        help you find it.
+                      </p>
+                      <a href="events.html" class="btn btn-gold px-4 py-2 mt-3">View Events</a>
+                    </div>
+                    <div class="col-lg-5">
+                      <img
+                        src="media/img/8.jpg"
+                        alt="Events"
+                        class="img-fluid service-image"
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="sports" class="tab-pane fade">
+                <div class="service-content">
+                  <div class="row align-items-center">
+                    <div class="col-lg-7">
+                      <h2 class="mb-4 text-gold">Sports & Entertainment</h2>
+                      <p class="lead mb-4">
+                        Great food, cold drinks, and the game on — what more could
+                        you want? Whether it's AFL season, a big international
+                        match, or just your weekly trivia night, we've found
+                        Melbourne's best spots to catch the action. From rowdy pubs
+                        to chill bars with big screens, these venues serve
+                        atmosphere as well as snacks.
+                      </p>
+                      <p class="mb-4">Game on. Let's eat.</p>
+                      <a href="sports.html" class="btn btn-gold px-4 py-2 mt-3">View Venues</a>
+                    </div>
+                    <div class="col-lg-5">
+                      <img
+                        src="media/img/9.jpg"
+                        alt="Sports"
+                        class="img-fluid service-image"
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinations Section -->
+      <section class="section" id="destinations">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h5 class="section-title">Culinary Excellence</h5>
+            <h2 class="section-heading text-font-1">Popular Destinations</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="destination-tabs">
+            <div class="row">
+              <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#destination-1">NOMA D Melbourne</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#destination-2">Farmer's Daughters</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#destination-3">The George on Collins</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#destination-4">La Cucina Melbourne</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#destination-5">Supernormal</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="col-lg-9">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="destination-1">
+                    <div class="destination-content">
+                      <div class="row align-items-center">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                          <h3 class="text-gold mb-4">NOMA D Melbourne</h3>
+                          <p class="lead fst-italic mb-4">
+                            Tucked beneath the bustling Flinders Lane, NOMAD Melbourne offers a dining experience where fire and smoke meet the vibrant flavors of Spain, Morocco, and the Middle East.
+                          </p>
+                          <p>
+                            The open kitchen and roaring wood-fired oven set the stage for dishes like smoked beef cheek with black garlic, wood-grilled cuttlefish, and their signature flatbread with za'atar. With a commitment to local produce and sustainable practices, NOMAD delivers bold, seasonal flavors in a stylish, subterranean setting.
+                          </p>
+                          <a href="booking.html" class="btn btn-outline-gold px-4 py-2 mt-3">Reserve a Table</a>
+                        </div>
+                        <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                          <img src="media/img/10.jpg" alt="NOMA D Melbourne" class="img-fluid destination-image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-pane" id="destination-2">
+                    <div class="destination-content">
+                      <div class="row align-items-center">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                          <h3 class="text-gold mb-4">Farmer's Daughters</h3>
+                          <p class="lead fst-italic mb-4">
+                            Nestled in Melbourne's 80 Collins Precinct, Farmer's Daughters is a three-level culinary homage to Gippsland's rich produce, curated by Executive Chef Alejandro Saravia.
+                          </p>
+                          <p>
+                            The ground-floor deli offers casual dining with Gippsland wines and beers, while the second-floor restaurant presents a formal farm-to-table experience, featuring dishes cooked over an open campfire kitchen. The rooftop bar provides an open-air oasis with locally sourced craft beverages. Each level immerses diners in the flavors and stories of regional Victoria, celebrating the connection between the city and the countryside.
+                          </p>
+                          <a href="booking.html" class="btn btn-outline-gold px-4 py-2 mt-3">Reserve a Table</a>
+                        </div>
+                        <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                          <img src="media/img/11.jpg" alt="Farmer's Daughters" class="img-fluid destination-image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-pane" id="destination-3">
+                    <div class="destination-content">
+                      <div class="row align-items-center">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                          <h3 class="text-gold mb-4">The George on Collins</h3>
+                          <p class="lead fst-italic mb-4">
+                            Beneath the historic Georges building on Collins Street lies The George on Collins—a stylish, New York-inspired basement venue blending Southeast Asian flavors with Melbourne's vibrant nightlife.
+                          </p>
+                          <p>
+                            Known for its moody interiors and private booths, it's perfect for intimate dinners or lively gatherings. The menu offers a range of shareable dishes, from pork bao buns to sambal chicken wings, complemented by an extensive cocktail list. With events like bottomless brunches and live DJ sets, The George seamlessly transitions from a dining hotspot to a late-night destination.
+                          </p>
+                          <a href="booking.html" class="btn btn-outline-gold px-4 py-2 mt-3">Reserve a Table</a>
+                        </div>
+                        <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                          <img src="media/img/12.jpg" alt="The George on Collins" class="img-fluid destination-image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-pane" id="destination-4">
+                    <div class="destination-content">
+                      <div class="row align-items-center">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                          <h3 class="text-gold mb-4">La Cucina Melbourne</h3>
+                          <p class="lead fst-italic mb-4">
+                            Tucked away on Little Bourke Street, La Cucina Melbourne brings the warmth of Italian hospitality to the heart of the CBD.
+                          </p>
+                          <p>
+                            This inviting eatery offers a mouthwatering menu featuring hand-stretched pizzas, creamy pastas, succulent steaks, and fresh seafood. Complemented by an extensive selection of wines and beers, the restaurant provides a cozy ambiance perfect for both casual lunches and romantic dinners. Whether you're indulging in traditional favorites or exploring new culinary delights, La Cucina promises a delightful dining experience that captures the essence of Italy.
+                          </p>
+                          <a href="booking.html" class="btn btn-outline-gold px-4 py-2 mt-3">Reserve a Table</a>
+                        </div>
+                        <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                          <img src="media/img/13.jpg" alt="La Cucina Melbourne" class="img-fluid destination-image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-pane" id="destination-5">
+                    <div class="destination-content">
+                      <div class="row align-items-center">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                          <h3 class="text-gold mb-4">Supernormal</h3>
+                          <p class="lead fst-italic mb-4">
+                            Nestled on Flinders Lane, Supernormal is a vibrant, all-day dining venue that seamlessly blends Japanese, Chinese, and Korean culinary traditions.
+                          </p>
+                          <p>
+                            The menu features standout dishes like the famed New England lobster roll, succulent Szechuan-peppered brisket, and the indulgent peanut butter parfait. The minimalist interior, highlighted by a long open kitchen and neon accents, creates an inviting atmosphere. Whether you're in for a casual lunch or a lively dinner, Supernormal offers a dynamic dining experience in the heart of Melbourne's CBD.
+                          </p>
+                          <a href="booking.html" class="btn btn-outline-gold px-4 py-2 mt-3">Reserve a Table</a>
+                        </div>
+                        <div class="col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                          <img src="media/img/14.jpg" alt="Supernormal" class="img-fluid destination-image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="cta-content text-center">
+                <h2 class="cta-title text-font-1">Elevate Your Dining Experience</h2>
+                <p class="text-white mb-5">Discover Melbourne's hidden culinary gems and exclusive dining experiences with LocalEats.</p>
+                <a href="contact.html" class="cta-button">Contact Us Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <h2 class="footer-logo text-font-1">LocalEats</h2>
+            <p class="footer-text">Discover Melbourne's best places to eat, drink, and explore — all in one curated guide.</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Contact Info</h5>
+            <ul class="footer-links">
+              <li><a href="#">123 XXXX XXXXX, Melbourne</a></li>
+              <li><a href="#">+12 345 678 910</a></li>
+              <li><a href="#">localeats@gmail.com</a></li>
+              <li><a href="#">Mon-Fri: 9AM - 6PM</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text">Subscribe to our newsletter for the latest updates on Melbourne's food scene.</p>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" style="border-radius: 0;">
+                <button class="btn btn-gold" type="button" style="border-radius: 0;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 <strong class="text-gold">LocalEats</strong>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Navbar scroll */
+      $(function () {
+        var nav = $(".navbar"),
+          doc = $(document),
+          win = $(window);
+
+        win.scroll(function () {
+          if (doc.scrollTop() > 80) {
+            nav.addClass("scrolled");
+          } else {
+            nav.removeClass("scrolled");
+          }
+        });
+
+        win.scroll();
+      });
+
+      setTimeout(() => {
+        alert("Contact us now to receive a 15% discount coupon for all meals at restaurants in Melbourne.");
+      }, "1000");
+
+      /*Audio animatión and play/pause music*/
+       const audio = document.getElementById('audio');
+  const playBtn = document.getElementById('playBtn');
+
+  let isPlaying = true; //Flag to check the audio is playing or not
+
+  const bars = document.querySelectorAll('.soundwave span');
+  bars.forEach((bar) => {
+    const randomDelay = (Math.random() * 1).toFixed(2); // 0.00 to 1.00 seconds
+    bar.style.animationDelay = `${randomDelay}s`;
+  });
+
+  playBtn.addEventListener('click', () => { //add click event to play/pause audio
+    if (isPlaying) { //If audio is playing -> pause, and if pause -> play
+      audio.pause();
+      playBtn.innerHTML = "&#9654;"; //triangle shape
+      document.querySelectorAll('.soundwave span').forEach(el => el.style.animationPlayState = 'paused');
+    } else {
+      audio.play();
+      playBtn.innerHTML = "&#10074;&#10074;"; //2 lines shape ||
+      document.querySelectorAll('.soundwave span').forEach(el => el.style.animationPlayState = 'running');
+    }
+    isPlaying = !isPlaying; //change falg value
+  });
+
+      /* Smooth Scrolling */
+      $(document).ready(function () {
+        $(".navbar a, a.btn").on("click", function (event) { //make scolling when press the button instead of teleport
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 70
+              },
+              800
+            );
+          }
+        });
+        
+        // Initialize Bootstrap tabs
+        $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+          // Animation for tab content
+          $($(e.target).attr('href')).addClass('fade-in');
+        });
+        
+        // Initialize Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+      });
+    </script>
+  </body>
+</html>
